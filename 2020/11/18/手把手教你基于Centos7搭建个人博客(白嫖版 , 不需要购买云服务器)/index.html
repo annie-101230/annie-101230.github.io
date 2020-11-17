@@ -7,11 +7,15 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="手把手教你基于Centos7搭建个人博客(白嫖版 , 不需要购买云服务器)我们本次教程使用的博客框架是Hexo由于Hexo依赖于NPM 我们先安装NodeJs第一步：curl –silent –location https:&#x2F;&#x2F;rpm.nodesource.com&#x2F;setup_10.x | sudo bash 12345678910111213141516171819202122232425262">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2020/11/18/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%9F%BA%E4%BA%8ECentos7%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2(%E7%99%BD%E5%AB%96%E7%89%88%20,%20%E4%B8%8D%E9%9C%80%E8%A6%81%E8%B4%AD%E4%B9%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8)/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="手把手教你基于Centos7搭建个人博客(白嫖版 , 不需要购买云服务器)我们本次教程使用的博客框架是Hexo由于Hexo依赖于NPM 我们先安装NodeJs第一步：curl –silent –location https:&#x2F;&#x2F;rpm.nodesource.com&#x2F;setup_10.x | sudo bash 12345678910111213141516171819202122232425262">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-17T18:33:23.069Z">
+<meta property="article:modified_time" content="2020-11-17T18:33:23.069Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-手把手教你基于Centos7搭建个人博客(白嫖版 , 不需要购买云服务器)" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-手把手教你基于Centos7搭建个人博客(白嫖版 , 不需要购买云服务器)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/11/18/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%9F%BA%E4%BA%8ECentos7%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2(%E7%99%BD%E5%AB%96%E7%89%88%20,%20%E4%B8%8D%E9%9C%80%E8%A6%81%E8%B4%AD%E4%B9%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8)/" class="article-date">
   <time datetime="2020-11-17T18:33:23.069Z" itemprop="datePublished">2020-11-18</time>
@@ -161,64 +163,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Docker容器里Elasticsearch 没安装 IK" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/18/Docker%E5%AE%B9%E5%99%A8%E9%87%8CElasticsearch%20%E6%B2%A1%E5%AE%89%E8%A3%85%20IK/" class="article-date">
-  <time datetime="2020-11-17T17:24:34.759Z" itemprop="datePublished">2020-11-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Docker容器里Elasticsearch-没安装-IK"><a href="#Docker容器里Elasticsearch-没安装-IK" class="headerlink" title="Docker容器里Elasticsearch 没安装 IK"></a>Docker容器里Elasticsearch 没安装 IK</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  * Caused by: org.elasticsearch.client.ResponseException: method[PUT], host[http: &#x2F;&#x2F;192.168.200.128:9200], URI [&#x2F;goods&#x2F;_mapping&#x2F;info?master_timeout&#x3D;30s&amp;include_type_name&#x3D;true&amp;timeout&#x3D;30s], status line [HTTP&#x2F;1.1 400 Bad Request]</span><br><span class="line">Warnings: [</span><br><span class="line">	[types removal] Specifying types in put mapping requests is deprecated.To be compatible with 7.0, the mapping definition should not be nested under the type name, and the parameter include_type_name must be provided and set to false.</span><br><span class="line">] &#123;</span><br><span class="line">	&quot;error&quot;: &#123;</span><br><span class="line">		&quot;root_cause&quot;: [&#123;</span><br><span class="line">			&quot;type&quot;: &quot;mapper_parsing_exception&quot;,</span><br><span class="line">			&quot;reason&quot;: &quot;analyzer [ik_max_word] not found for field [title]&quot;</span><br><span class="line">		&#125;],</span><br><span class="line">		&quot;type&quot;: &quot;mapper_parsing_exception&quot;,</span><br><span class="line">		&quot;reason&quot;: &quot;analyzer [ik_max_word] not found for field [title]&quot;</span><br><span class="line">	&#125;,</span><br><span class="line">	&quot;status&quot;: 400</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+  
+    <a href="/2020/11/18/Docker%E5%AE%B9%E5%99%A8%E9%87%8CElasticsearch%20%E6%B2%A1%E5%AE%89%E8%A3%85%20IK/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ol>
-<li><p>查看docker容器内的es插件运行情况</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs -f elasticsearch</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[2020-11-13T08:52:33,231][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [aggs-matrix-stats]</span><br><span class="line">[2020-11-13T08:52:33,231][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [analysis-common]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [ingest-common]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [ingest-geoip]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [ingest-user-agent]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [lang-expression]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [lang-mustache]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [lang-painless]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [mapper-extras]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [parent-join]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [percolator]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [rank-eval]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [reindex]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [repository-url]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [transport-netty4]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [tribe]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-ccr]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-core]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-deprecation]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-graph]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-ilm]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-logstash]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-ml]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-monitoring]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-rollup]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-security]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-sql]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-upgrade]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-watcher]</span><br><span class="line">[2020-11-13T08:52:33,235][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded plugin [analysis-ik]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入容器内部 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it elasticsearch bash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取容器路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pdw</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制插件进容器内部</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp ik ebe500ad730d:&#x2F;usr&#x2F;share&#x2F;elasticsearch&#x2F;plugins</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<ol start="5">
-<li><p>重启容器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart elasticsearch</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/18/Docker%E5%AE%B9%E5%99%A8%E9%87%8CElasticsearch%20%E6%B2%A1%E5%AE%89%E8%A3%85%20IK/" data-id="ckhm8yxr8000061n5dhvj8jik" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
