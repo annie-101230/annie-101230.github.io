@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Docker容器里Elasticsearch 没安装 IK123456789101112131415  * Caused by: org.elasticsearch.client.ResponseException: method[PUT], host[http: &#x2F;&#x2F;192.168.200.128:9200], URI [&#x2F;goods&#x2F;_mapping&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2020/11/18/Docker%E5%AE%B9%E5%99%A8%E9%87%8CElasticsearch%20%E6%B2%A1%E5%AE%89%E8%A3%85%20IK/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Docker容器里Elasticsearch 没安装 IK123456789101112131415  * Caused by: org.elasticsearch.client.ResponseException: method[PUT], host[http: &#x2F;&#x2F;192.168.200.128:9200], URI [&#x2F;goods&#x2F;_mapping&amp;#">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-17T17:24:34.759Z">
+<meta property="article:modified_time" content="2020-11-17T17:24:34.759Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Docker容器里Elasticsearch 没安装 IK" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/18/Docker%E5%AE%B9%E5%99%A8%E9%87%8CElasticsearch%20%E6%B2%A1%E5%AE%89%E8%A3%85%20IK/" class="article-date">
+  <time datetime="2020-11-17T17:24:34.759Z" itemprop="datePublished">2020-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Docker容器里Elasticsearch-没安装-IK"><a href="#Docker容器里Elasticsearch-没安装-IK" class="headerlink" title="Docker容器里Elasticsearch 没安装 IK"></a>Docker容器里Elasticsearch 没安装 IK</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  * Caused by: org.elasticsearch.client.ResponseException: method[PUT], host[http: &#x2F;&#x2F;192.168.200.128:9200], URI [&#x2F;goods&#x2F;_mapping&#x2F;info?master_timeout&#x3D;30s&amp;include_type_name&#x3D;true&amp;timeout&#x3D;30s], status line [HTTP&#x2F;1.1 400 Bad Request]</span><br><span class="line">Warnings: [</span><br><span class="line">	[types removal] Specifying types in put mapping requests is deprecated.To be compatible with 7.0, the mapping definition should not be nested under the type name, and the parameter include_type_name must be provided and set to false.</span><br><span class="line">] &#123;</span><br><span class="line">	&quot;error&quot;: &#123;</span><br><span class="line">		&quot;root_cause&quot;: [&#123;</span><br><span class="line">			&quot;type&quot;: &quot;mapper_parsing_exception&quot;,</span><br><span class="line">			&quot;reason&quot;: &quot;analyzer [ik_max_word] not found for field [title]&quot;</span><br><span class="line">		&#125;],</span><br><span class="line">		&quot;type&quot;: &quot;mapper_parsing_exception&quot;,</span><br><span class="line">		&quot;reason&quot;: &quot;analyzer [ik_max_word] not found for field [title]&quot;</span><br><span class="line">	&#125;,</span><br><span class="line">	&quot;status&quot;: 400</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ol>
+<li><p>查看docker容器内的es插件运行情况</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs -f elasticsearch</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[2020-11-13T08:52:33,231][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [aggs-matrix-stats]</span><br><span class="line">[2020-11-13T08:52:33,231][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [analysis-common]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [ingest-common]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [ingest-geoip]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [ingest-user-agent]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [lang-expression]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [lang-mustache]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [lang-painless]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [mapper-extras]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [parent-join]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [percolator]</span><br><span class="line">[2020-11-13T08:52:33,232][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [rank-eval]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [reindex]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [repository-url]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [transport-netty4]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [tribe]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-ccr]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-core]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-deprecation]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-graph]</span><br><span class="line">[2020-11-13T08:52:33,233][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-ilm]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-logstash]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-ml]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-monitoring]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-rollup]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-security]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-sql]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-upgrade]</span><br><span class="line">[2020-11-13T08:52:33,234][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded module [x-pack-watcher]</span><br><span class="line">[2020-11-13T08:52:33,235][INFO ][o.e.p.PluginsService     ] [A9y8B2a] loaded plugin [analysis-ik]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入容器内部 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it elasticsearch bash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取容器路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pdw</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制插件进容器内部</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp ik ebe500ad730d:&#x2F;usr&#x2F;share&#x2F;elasticsearch&#x2F;plugins</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="5">
+<li><p>重启容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart elasticsearch</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/18/Docker%E5%AE%B9%E5%99%A8%E9%87%8CElasticsearch%20%E6%B2%A1%E5%AE%89%E8%A3%85%20IK/" data-id="ckhm8yxr8000061n5dhvj8jik" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/11/18/Docker%E5%AE%B9%E5%99%A8%E9%87%8CElasticsearch%20%E6%B2%A1%E5%AE%89%E8%A3%85%20IK/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
